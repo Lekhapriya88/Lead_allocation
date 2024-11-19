@@ -1,0 +1,343 @@
+[
+    {
+        "description": "Prefer counsellors with overall experience >= 5",
+        "conditions": [
+            {
+                "left": {
+                    "entity": "counsellor",
+                    "attribute": "f_Overall Experience ( In years ) Experience Score"
+                },
+                "operator": ">=",
+                "right": {
+                    "value": "5"
+                }
+            }
+        ],
+        "logic": "AND",
+        "weight": 1.0
+    },
+    {
+        "description": "Assign to counsellor who is Expert in Kannada to a lead whose primary language is Kannada",
+        "conditions": [
+            {
+                "left": {
+                    "entity": "lead",
+                    "attribute": "f_Primary Language"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Kannada"
+                }
+            },
+            {
+                "left": {
+                    "entity": "counsellor",
+                    "attribute": "Languages Known [Kannada]"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Expert"
+                }
+            }
+        ],
+        "logic": "AND",
+        "weight": 3.0
+    },
+    {
+        "description": "Assign to counsellor who is Expert in Hindi to a lead whose primary language is Hindi",
+        "conditions": [
+            {
+                "left": {
+                    "entity": "lead",
+                    "attribute": "f_Primary Language"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Hindi"
+                }
+            },
+            {
+                "left": {
+                    "entity": "counsellor",
+                    "attribute": " Languages Known [Hindi]"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Expert"
+                }
+            }
+        ],
+        "logic": "AND",
+        "weight": 3.0
+    },
+    {
+        "description": "Assign to counsellor who is Expert in Tamil to a lead whose primary language is Tamil",
+        "conditions": [
+            {
+                "left": {
+                    "entity": "lead",
+                    "attribute": "f_Primary Language"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Tamil"
+                }
+            },
+            {
+                "left": {
+                    "entity": "counsellor",
+                    "attribute": " Languages Known [Tamil]"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Expert"
+                }
+            }
+        ],
+        "logic": "AND",
+        "weight": 3.0
+    },
+    {
+        "description": "Assign to counsellor who is Expert in Telugu to a lead whose primary language is Telugu",
+        "conditions": [
+            {
+                "left": {
+                    "entity": "lead",
+                    "attribute": "f_Primary Language"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Telugu"
+                }
+            },
+            {
+                "left": {
+                    "entity": "counsellor",
+                    "attribute": " Languages Known [Telugu]"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Expert"
+                }
+            }
+        ],
+        "logic": "AND",
+        "weight": 3.0
+    },
+    {
+        "description": "Assign to counsellor who is Expert in Malayalam to a lead whose primary language is Malayalam",
+        "conditions": [
+            {
+                "left": {
+                    "entity": "lead",
+                    "attribute": "f_Primary Language"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Malayalam"
+                }
+            },
+            {
+                "left": {
+                    "entity": "counsellor",
+                    "attribute": " Languages Known [Malayalam]"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Expert"
+                }
+            }
+        ],
+        "logic": "AND",
+        "weight": 3.0
+    },
+    {
+        "description": "Assign to counsellor who is Expert in English to a lead whose primary language is English",
+        "conditions": [
+            {
+                "left": {
+                    "entity": "lead",
+                    "attribute": "f_Primary Language"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "English"
+                }
+            },
+            {
+                "left": {
+                    "entity": "counsellor",
+                    "attribute": " Languages Known [English]"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Expert"
+                }
+            }
+        ],
+        "logic": "AND",
+        "weight": 3.0
+    },
+    {
+        "description": "Assign to counsellor who is Intermediate in Kannada to a lead whose primary language is Kannada",
+        "conditions": [
+            {
+                "left": {
+                    "entity": "lead",
+                    "attribute": "f_Primary Language"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Kannada"
+                }
+            },
+            {
+                "left": {
+                    "entity": "counsellor",
+                    "attribute": " Languages Known [Kannada]"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Intermediate"
+                }
+            }
+        ],
+        "logic": "AND",
+        "weight": 2.0
+    },
+    {
+        "description": "Assign to counsellor who is Intermediate in Hindi to a lead whose primary language is Hindi",
+        "conditions": [
+            {
+                "left": {
+                    "entity": "lead",
+                    "attribute": "f_Primary Language"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Hindi"
+                }
+            },
+            {
+                "left": {
+                    "entity": "counsellor",
+                    "attribute": " Languages Known [Hindi]"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Intermediate"
+                }
+            }
+        ],
+        "logic": "AND",
+        "weight": 2.0
+    },
+    {
+        "description": "Assign to counsellor who is Intermediate in Tamil to a lead whose primary language is Tamil",
+        "conditions": [
+            {
+                "left": {
+                    "entity": "lead",
+                    "attribute": "f_Primary Language"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Tamil"
+                }
+            },
+            {
+                "left": {
+                    "entity": "counsellor",
+                    "attribute": " Languages Known [Tamil]"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Intermediate"
+                }
+            }
+        ],
+        "logic": "AND",
+        "weight": 2.0
+    },
+    {
+        "description": "Assign to counsellor who is Intermediate in Telugu to a lead whose primary language is Telugu",
+        "conditions": [
+            {
+                "left": {
+                    "entity": "lead",
+                    "attribute": "f_Primary Language"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Telugu"
+                }
+            },
+            {
+                "left": {
+                    "entity": "counsellor",
+                    "attribute": " Languages Known [Telugu]"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Intermediate"
+                }
+            }
+        ],
+        "logic": "AND",
+        "weight": 2.0
+    },
+    {
+        "description": "Assign to counsellor who is Intermediate in Malayalam to a lead whose primary language is Malayalam",
+        "conditions": [
+            {
+                "left": {
+                    "entity": "lead",
+                    "attribute": "f_Primary Language"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Malayalam"
+                }
+            },
+            {
+                "left": {
+                    "entity": "counsellor",
+                    "attribute": " Languages Known [Malayalam]"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Intermediate"
+                }
+            }
+        ],
+        "logic": "AND",
+        "weight": 2.0
+    },
+    {
+        "description": "Assign to counsellor who is Intermediate in English to a lead whose primary language is English",
+        "conditions": [
+            {
+                "left": {
+                    "entity": "lead",
+                    "attribute": "f_Primary Language"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "English"
+                }
+            },
+            {
+                "left": {
+                    "entity": "counsellor",
+                    "attribute": " Languages Known [English]"
+                },
+                "operator": "==",
+                "right": {
+                    "value": "Intermediate"
+                }
+            }
+        ],
+        "logic": "AND",
+        "weight": 2.0
+    }
+]

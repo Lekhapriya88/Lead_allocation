@@ -1,0 +1,14 @@
+ydata-profiling
+pandas
+numpy
+scikit-learn
+openpyxl
+xlrd
+streamlit
+spacy
+#python -m spacy download en_core_web_sm
+pulp
+fastapi
+uvicorn
+pytest
+httpx

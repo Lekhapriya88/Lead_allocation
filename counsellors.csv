@@ -1,0 +1,8 @@
+id,name,location,specialization,language,conversion_rate,workload
+1,John,New York,Business,English,0.8,3
+2,Maria,California,Engineering,English,0.75,4
+3,Pedro,Texas,Arts,Spanish,0.9,2
+4,Sophia,Florida,Business,English,0.85,1
+5,Liam,Florida,Engineering,English,0.9,2
+6,Nina,New York,Business,English,0.7,5
+7,Owen,California,Engineering,English,0.6,4
